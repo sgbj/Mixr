@@ -1,0 +1,59 @@
+﻿<!doctype html>
+<html ng-app>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.12.0/css/semantic.min.css" rel="stylesheet" />
+    <link href="//fonts.googleapis.com/css?family=Domine:400,700" rel="stylesheet" />
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.12.0/javascript/semantic.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
+    <style>
+        body {
+            background: url(assets/img/noise.png);
+        }
+
+        * {
+            font-family: Domine;
+        }
+
+        h1.ui.center.aligned.header {
+            font-size: 5rem;
+            padding-top: 20px !important;
+            margin-bottom: 10px;
+        }
+
+        .ui.top.sidebar {
+            overflow-y: visible;
+            height: 58px !important;
+        }
+
+        .title.item {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="ui top floating red sidebar menu active">
+        <div class="title item active">
+            <i class="circular inverted glass icon"></i>
+        </div>
+        <div class="right menu">
+            <a class="item" href="~/">
+                <i class="circular inverted home icon"></i>
+            </a>
+        </div>
+    </div>
+
+    <h1 class="ui red center aligned header">Mixr</h1>
+
+    <div class="ui horizontal icon divider">
+        <i class="circular beer icon"></i>
+    </div>
+
+    @RenderBody()
+
+    <script>
+        $('.ui.rating').rating();
+    </script>
+</body>
+</html>
