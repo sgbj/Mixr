@@ -1,7 +1,7 @@
 Mixr
 ===
 
-Mixr is a drink mixing, testing, and sharing social site that's currently in development.
+Mixr is a drink mixing, tasting, sharing social site that's currently in development. This is a fun little project for me to use Semantic UI and AngularJS with.
 
 Pictures
 ---------
